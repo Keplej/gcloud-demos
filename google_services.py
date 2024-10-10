@@ -77,3 +77,6 @@ class GoogleSheets(GoogleServices):
         except Exception as e:
             print(f"Error has occurred while clearing the sheet: {e}")
             return None
+
+class GoogleMail(GoogleServices):
+    pass
