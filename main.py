@@ -35,11 +35,11 @@ def clear_sheet_values(service_account, scopes, spreadhseet_id, range_name):
 if __name__ == "__main__":
 
     data = [
-        ["1", "2", "3"],
-        ["4", "5", "6"]
+        ["Mike", "$200.00", "$0.00"],
+        ["Eric", "$50.00", "$25.50"]
     ]
 
     clear_sheet_values(SERVICE_ACCOUNT, SCOPES, SPREADSHEET_ID, 'test!A2:C13')
     write_sheet_values(SERVICE_ACCOUNT, SCOPES, SPREADSHEET_ID, 'test!A1', data)
-    read = read_sheet_values(SERVICE_ACCOUNT, SCOPES, SPREADSHEET_ID, 'test!A1:C3')
-    print(read)
+    # read = read_sheet_values(SERVICE_ACCOUNT, SCOPES, SPREADSHEET_ID, 'test!A1:C3')
+    # print(read)
